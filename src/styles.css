@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.food-card{
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 10px;
+  width:15rem;
+  border-radius: 10px;
+  
+}
+
+.food-card:hover{
+  box-shadow:  0px 0px 15px;
+  transition: box-shadow, 0.5s;
+}
+
+#vej{
+  background-color: aquamarine;
+
+}
+
+#non-vej{
+  background-color: red;
+}
+
+button{
+  width:100%;
+  border-radius10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
