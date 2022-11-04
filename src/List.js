@@ -1,8 +1,12 @@
-const List = ({ food }) => {
+const List = ({ food, removeFood }) => {
+
+
+
   return (
     <div className="main-container">
       {food.map((item) => {
         const { id, food_name, type, price } = item;
+
         return (
           <div
             className="food-card"
@@ -12,7 +16,7 @@ const List = ({ food }) => {
             <h3>Food: {food_name}</h3>
             <p>Type: {type}</p>
             <p>Price: {price}</p>
-            <button>Not Intrested</button>
+            <button onClick = {()=>removeFood(id)}>Not Intrested</button>
           </div>
         );
       })}
